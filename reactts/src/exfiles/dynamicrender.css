@@ -1,0 +1,9 @@
+.list-style {
+    list-style-type: none;
+}
+
+.list-style li {
+    background: url('./image.jpeg') no-repeat;
+    padding-left: 20px;
+    background-size: 20px;
+}

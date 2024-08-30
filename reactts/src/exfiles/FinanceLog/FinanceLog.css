@@ -1,0 +1,77 @@
+:root{
+    --bordercolorred:1px solid red;
+    --bordercolorblue:1px solid blue;
+}
+body {
+    background-color: rgb(245, 243, 240);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    color: rgb(255, 90, 118);
+    margin: 0.5% 5% 2% 40%;
+    padding: 0.9%;
+    padding-bottom: 0.5%;
+}
+
+#input-panel{
+    margin:0.5% ;
+}
+
+input,
+select {
+    font-size: 20px;
+    border: none;
+    border-bottom: var(--bordercolorred);
+}
+
+.label-style {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2% 16% 2% 2%;
+}
+
+.input-style {
+    margin: 0.5% 4% 5% 1%;
+}
+
+.submit-btn{
+    font-size: 20px;
+    border-radius: 15px;
+    border: 3px solid red;
+    border-width: 0px 2px;
+    margin-bottom: 20px;
+    padding: 4px 9px;
+}
+
+.edit-btn{
+    position: relative;
+    left: 10%;
+    background: none;
+}
+img{
+    height: 1.5rem;
+
+}
+#total-panel {
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+.total-panel-data {
+    margin: 4%;
+}
+input:focus,
+select:focus {
+    outline: none;
+    border-bottom: var(--bordercolorblue);
+}
+.submit-btn:focus,.edit-btn:focus{
+    border: none;
+}
+.submit-btn:hover,.edit-btn:hover {
+    border: var(--bordercolorblue);
+    transition: all 100ms;
+}
