@@ -1,13 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <h2>Calculator</h2>
+        <div id="display"></div>
+        <div id="inputs">
+            <div>
+                <span class="btn" data-value = "1">1</span>
+                <span class="btn" data-value = "2">2</span>
+                <span class="btn" data-value = "3">3</span>
+                <span class="btn" data-operation = "+">+</span>
+            </div>
+            <div>
+                <span class="btn" data-value="4">4</span>
+                <span class="btn" data-value="5">5</span>
+                <span class="btn" data-value="6">6</span>
+                <span class="btn" data-operation="-">-</span>
+            </div>
+            <div>
+                <span class="btn" data-value="7">7</span>
+                <span class="btn" data-value="8">8</span>
+                <span class="btn" data-value="9">9</span>
+                <span class="btn" data-operation="*">*</span>
+            </div>
+            <div>
+                <span class="btn" data-value="0">0</span>
+                <span class="controls btn" data-operation="=">=</span>
+                <span class="controls btn clear" data-operation="clear">AC</span>
+                <span>/</span>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
 </html>
