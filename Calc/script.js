@@ -33,6 +33,8 @@ function handleOperation(op) {
     // = is pressed when user in past pressed + , - , * , / that means the previous value is not empty
     else if(previousInput !== '' && currentInput !== '') {
         claculate();
+    }else if(op == "clear") {
+        allClear();   
     }else {
         operation = op;
         previousInput = currentInput;
@@ -65,4 +67,10 @@ function claculate() {
     previousInput = '';
     display.innerText = currentInput;
    }
+}
+function allClear() {
+    operation = null;
+    currentInput = '';
+    previousInput ='';
+    display.innerText = currentInput;
 }
